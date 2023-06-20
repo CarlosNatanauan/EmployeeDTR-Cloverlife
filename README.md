@@ -17,7 +17,7 @@ Curious about how it works? Check out a full walk-through of our application! Cl
 
 Here's a glimpse of our user-friendly interface:
 
-![User Interface Preview](https://github.com/CarlosNatanauan/EmployeeDTR/assets/94023674/d0c142a7-31f6-4556-80b2-36f76e7f1bc6)
+![5final](https://github.com/CarlosNatanauan/EmployeeDTR/assets/94023674/1d3c0ca5-f2ce-4044-8c88-f703cae789f0)
 
 We're excited for you to experience the Cloverlife Employee DTR. Feel free to explore, and we're always here for any questions or feedback you might have!
 
