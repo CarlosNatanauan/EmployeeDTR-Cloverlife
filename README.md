@@ -8,7 +8,8 @@ Watch full process below
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/AdoQwhx6Gb8/0.jpg)](https://www.youtube.com/watch?v=AdoQwhx6Gb8)
 
-![1](https://github.com/CarlosNatanauan/EmployeeDTR/assets/94023674/7aa51278-793c-4f6f-ba30-bb6a979c6616)
+![4](https://github.com/CarlosNatanauan/EmployeeDTR/assets/94023674/d0c142a7-31f6-4556-80b2-36f76e7f1bc6)
+
 
 
 
