@@ -1,4 +1,4 @@
-# Final project - Mobile Systems and Technologies 📱
+# FINAL PROJECT - Mobile Systems and Technologies 📱
 # Employee DTR | Cloverlife 🍀
 
 Welcome to the Employee DTR project repository! This solution is designed to revolutionize the way we manage and track time & attendance, streamlining the process like never before. Let's turn over a new leaf with Cloverlife.
