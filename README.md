@@ -4,7 +4,7 @@ Employee DTR | Cloverlife
 
 Click [here](https://bit.ly/employeedtr) to download APK
 
-Watch full process
+Watch full process below
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/AdoQwhx6Gb8/0.jpg)](https://www.youtube.com/watch?v=AdoQwhx6Gb8)
 
