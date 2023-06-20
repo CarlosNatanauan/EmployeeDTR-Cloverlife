@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Name"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textAppearance="?attr/textAppearanceListItemSmall" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textAppearance="?attr/textAppearanceListItemSmall" />
+
+    <TextView
+        android:id="@+id/contactNoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact No"
+        android:textAppearance="?attr/textAppearanceListItemSmall" />
+
+    <TextView
+        android:id="@+id/basicSalaryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basic Salary"
+        android:textAppearance="?attr/textAppearanceListItemSmall" />
+
+    <TextView
+        android:id="@+id/workingHoursInTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Working Hours In"
+        android:textAppearance="?attr/textAppearanceListItemSmall" />
+
+    <TextView
+        android:id="@+id/workingHoursOutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Working Hours Out"
+        android:textAppearance="?attr/textAppearanceListItemSmall" />
+
+    <TextView
+        android:id="@+id/roleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role"
+        android:textAppearance="?attr/textAppearanceListItemSmall" />
+
+    <TextView
+        android:id="@+id/otEntitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OT Entitle"
+        android:textAppearance="?attr/textAppearanceListItemSmall" />
+
+
+</LinearLayout>

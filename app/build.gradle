@@ -1,0 +1,95 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.mobiledev.employeedtr'
+    compileSdk 33
+
+
+    packagingOptions {
+        pickFirst 'META-INF/DEPENDENCIES'
+        pickFirst 'META-INF/LICENSE'
+        pickFirst 'META-INF/LICENSE.txt'
+        pickFirst 'META-INF/license.txt'
+        pickFirst 'META-INF/NOTICE'
+        pickFirst 'META-INF/NOTICE.txt'
+        pickFirst 'META-INF/notice.txt'
+        pickFirst 'META-INF/ASL2.0'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+
+
+    packagingOptions {
+        pickFirst 'META-INF/DEPENDENCIES'
+    }
+
+    defaultConfig {
+        applicationId "com.mobiledev.employeedtr"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.gauravk.bubblenavigation:bubblenavigation:1.0.7'
+    implementation 'com.github.yuriy-budiyev:code-scanner:2.1.1'
+
+    implementation 'androidx.navigation:navigation-fragment:2.4.1'
+    implementation 'androidx.navigation:navigation-ui:2.4.1'
+    implementation 'com.github.Far5had70:PersianEditText:3.2.0'
+    implementation 'in.shadowfax:proswipebutton:1.2.2'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.google.zxing:core:3.4.1'
+    implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
+
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+
+   //implementation 'com.tom_roush:pdfbox-android:1.8.10.3'
+   // implementation 'com.github.dhorions:boxable:1.5'
+    implementation 'com.itextpdf:itext7-core:7.1.16'
+
+    implementation 'androidx.biometric:biometric:1.1.0'
+
+    implementation 'com.github.yatindeokar:MyLoadingButton:v1.0.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'info.hoang8f:fbutton:1.0.5'
+
+}

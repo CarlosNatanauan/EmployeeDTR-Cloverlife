@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:PersianEditText="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manageAdd"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#4A4A4A"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layoutforprofile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/profilepic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/employeePic"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_insideadd"
+                        android:scaleType="centerInside" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutforprofile"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Employee ID"
+                    app:textSize="8sp"
+                    android:paddingLeft="20dp"
+                    />
+                <!-- start -->
+
+                <ir.waspar.persianedittext.PersianEditText
+                    android:id="@+id/employeeID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    app:edtgravity="left"
+                    app:edtInputType="phone"
+                    app:imageSrc="@drawable/ic_id"
+                    PersianEditText:setHint="Employee ID"
+                    app:setImageBackground="#1F2731"
+                    app:strokeColor="@color/black"
+                    app:strokeRadius="3dp"
+                    app:maxLenght="5"
+                    app:strokeSize="1dp"
+                    app:textColor="#1F2731"
+                    app:textSize="8sp"
+                    android:paddingBottom="20dp"/>
+                <!-- end -->
+
+                <!-- start -->
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Name"
+                    app:textSize="8sp"
+                    android:paddingLeft="20dp"
+                    />
+
+                <ir.waspar.persianedittext.PersianEditText
+                    android:id="@+id/employeeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    app:edtgravity="left"
+                    app:edtInputType="text"
+                    app:imageSrc="@drawable/ic_profilewhite3"
+                    PersianEditText:setHint="Employee Name"
+                    app:setImageBackground="#1F2731"
+                    app:strokeColor="@color/black"
+                    app:strokeRadius="3dp"
+                    app:maxLenght="50"
+                    app:strokeSize="1dp"
+                    app:textColor="#1F2731"
+                    app:textSize="8sp"
+                    android:paddingBottom="20dp"/>
+                <!-- end -->
+
+                <!-- start -->
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    app:textSize="8sp"
+                    android:paddingLeft="20dp"
+                    />
+
+                <ir.waspar.persianedittext.PersianEditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    app:edtgravity="left"
+                    app:edtInputType="text"
+                    app:imageSrc="@drawable/ic_address"
+                    PersianEditText:setHint="Address"
+                    app:setImageBackground="#1F2731"
+                    app:strokeColor="@color/black"
+                    app:strokeRadius="3dp"
+                    app:maxLenght="100"
+                    app:strokeSize="1dp"
+                    app:textColor="#1F2731"
+                    app:textSize="8sp"
+                    android:paddingBottom="20dp"/>
+                <!-- end -->
+
+
+                <!-- start -->
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address"
+                    app:textSize="8sp"
+                    android:paddingLeft="20dp"
+                    />
+
+                <ir.waspar.persianedittext.PersianEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    app:edtgravity="left"
+                    app:edtInputType="text"
+                    app:imageSrc="@drawable/ic_email"
+                    PersianEditText:setHint="Email Address"
+                    app:setImageBackground="#1F2731"
+                    app:strokeColor="@color/black"
+                    app:strokeRadius="3dp"
+                    app:maxLenght="50"
+                    app:strokeSize="1dp"
+                    app:textColor="#1F2731"
+                    app:textSize="8sp"
+                    android:paddingBottom="20dp"/>
+                <!-- end -->
+
+
+                <!-- start -->
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Number"
+                    app:textSize="8sp"
+                    android:paddingLeft="20dp"
+                    />
+
+                <ir.waspar.persianedittext.PersianEditText
+                    android:id="@+id/contactNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    app:edtgravity="left"
+                    app:edtInputType="phone"
+                    app:imageSrc="@drawable/ic_phone"
+                    PersianEditText:setHint="Contact Number"
+                    app:setImageBackground="#1F2731"
+                    app:strokeColor="@color/black"
+                    app:strokeRadius="3dp"
+                    app:maxLenght="12"
+                    app:strokeSize="1dp"
+                    app:textColor="#1F2731"
+                    app:textSize="8sp"
+                    android:paddingBottom="20dp"/>
+                <!-- end -->
+
+
+                <!-- start -->
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basic Salary"
+                    app:textSize="8sp"
+                    android:paddingLeft="20dp"
+                    />
+
+                <ir.waspar.persianedittext.PersianEditText
+                    android:id="@+id/basicSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    app:edtgravity="left"
+                    app:edtInputType="phone"
+                    app:imageSrc="@drawable/ic_salary"
+                    PersianEditText:setHint="Basic Salary"
+                    app:setImageBackground="#1F2731"
+                    app:strokeColor="@color/black"
+                    app:strokeRadius="3dp"
+                    app:maxLenght="20"
+                    app:strokeSize="1dp"
+                    app:textColor="#1F2731"
+                    app:textSize="8sp"
+                    android:paddingBottom="20dp"/>
+                <!-- end -->
+
+
+                <!-- start -->
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Working Hours (TIME IN)"
+                    app:textSize="8sp"
+                    android:paddingLeft="20dp"
+                    />
+
+                <ir.waspar.persianedittext.PersianEditText
+                    android:id="@+id/workingHoursIN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    app:edtgravity="left"
+                    app:edtInputType="phone"
+                    app:imageSrc="@drawable/ic_clock"
+                    PersianEditText:setHint="Working Hours"
+                    app:setImageBackground="#1F2731"
+                    app:strokeColor="@color/black"
+                    app:strokeRadius="3dp"
+                    app:maxLenght="11"
+                    app:strokeSize="1dp"
+                    app:textColor="#1F2731"
+                    app:textSize="8sp"
+                    android:paddingBottom="20dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"/>
+                <!-- end -->
+
+
+
+                <!-- start -->
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Working Hours (TIME OUT)"
+                    app:textSize="8sp"
+                    android:paddingLeft="20dp"
+                    />
+
+                <ir.waspar.persianedittext.PersianEditText
+                    android:id="@+id/workingHoursOUT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    app:edtgravity="left"
+                    app:edtInputType="phone"
+                    app:imageSrc="@drawable/ic_clock"
+                    PersianEditText:setHint="Working Hours"
+                    app:setImageBackground="#1F2731"
+                    app:strokeColor="@color/black"
+                    app:strokeRadius="3dp"
+                    app:maxLenght="11"
+                    app:strokeSize="1dp"
+                    app:textColor="#1F2731"
+                    app:textSize="8sp"
+                    android:paddingBottom="20dp"/>
+                <!-- end -->
+
+                <!-- start -->
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Role"
+                    app:textSize="8sp"
+                    android:paddingLeft="20dp"
+                    />
+
+                <ir.waspar.persianedittext.PersianEditText
+                    android:id="@+id/empRole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    app:edtgravity="left"
+                    app:edtInputType="text"
+                    app:imageSrc="@drawable/ic_role"
+                    PersianEditText:setHint="Employee Role"
+                    app:setImageBackground="#1F2731"
+                    app:strokeColor="@color/black"
+                    app:strokeRadius="3dp"
+                    app:maxLenght="21"
+                    app:strokeSize="1dp"
+                    app:textColor="#1F2731"
+                    app:textSize="8sp"
+                    android:paddingBottom="20dp"/>
+                <!-- end -->
+
+
+                <!-- start -->
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OT entitle"
+                    app:textSize="8sp"
+                    android:paddingLeft="20dp"
+                    />
+
+                <ir.waspar.persianedittext.PersianEditText
+                    android:id="@+id/otEntitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    app:edtgravity="left"
+                    app:edtInputType="text"
+                    app:imageSrc="@drawable/ic_ot"
+                    PersianEditText:setHint="OT Entitle"
+                    app:setImageBackground="#1F2731"
+                    app:strokeColor="@color/black"
+                    app:strokeRadius="3dp"
+                    app:maxLenght="11"
+                    app:strokeSize="1dp"
+                    app:textColor="#1F2731"
+                    app:textSize="8sp"
+                    android:paddingBottom="20dp"/>
+                <!-- end -->
+
+                <in.shadowfax.proswipebutton.ProSwipeButton
+                    android:id="@+id/btnAddEmployee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:bg_color="#1F2731"
+                    app:textColor="@color/white"
+                    app:btn_text="Register Empoyee"
+                    app:btn_radius="20"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

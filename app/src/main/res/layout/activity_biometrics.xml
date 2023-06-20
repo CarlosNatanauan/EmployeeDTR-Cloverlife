@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f9fe"
+    tools:context=".Biometrics">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4A4A4A"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="270dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_biometricsown"
+        android:scaleType="centerInside"
+        android:layout_marginTop="80dp"
+        />
+
+        <TextView
+            android:id="@+id/Biometricslogine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biometrics Login"
+            android:textColor="#393939"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/usebio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in yo your account faster using Biometrics Login"
+            android:textColor="#393939"
+            android:textSize="13sp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <!--put tick here-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:layout_marginTop="50dp"
+            >
+
+            <TextView
+                android:id="@+id/tickLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable Biometrics Login"
+                android:textColor="#393939"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="end" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|end">
+
+                <Switch
+                    android:id="@+id/bioSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_gravity="end"
+                    android:thumbTint="@color/switch_selector"
+                    android:trackTint="@color/switch_selector" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/usebionote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By enabling biometrics login, you allow Cloverlife to access your saved biometrics data in your device to create and save data in Cloverlife that shall be used for securing your login. The data will not be used for any other purposes."
+            android:textColor="#818181"
+            android:layout_marginTop="165dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

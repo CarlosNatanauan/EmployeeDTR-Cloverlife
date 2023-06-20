@@ -1,0 +1,199 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+    android:background="@drawable/bg_profilefinal"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_wally"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/userName"
+            android:layout_margin="16dp"/>
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Carlos Natanauan"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="13dp"
+            android:textColor="#1F2731"
+            app:layout_constraintTop_toTopOf="@+id/profileImage"
+            app:layout_constraintStart_toEndOf="@+id/profileImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/userRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Administrator"
+            android:textSize="16sp"
+            android:textColor="#1F2731"
+            app:layout_constraintTop_toBottomOf="@+id/userName"
+            app:layout_constraintStart_toStartOf="@+id/userName"/>
+
+        <!-- Account Section -->
+        <TextView
+            android:id="@+id/accountHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:textSize="20sp"
+            android:textColor="#1F2731"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/profileImage"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/usernameButton"
+            style="@style/OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textAllCaps="false"
+            android:gravity="center_vertical|start"
+            android:text="Change username"
+            app:layout_constraintTop_toBottomOf="@+id/accountHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cornerRadius="0dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/personalInfoButton"
+            style="@style/OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textAllCaps="false"
+            android:gravity="center_vertical|start"
+            android:text="Personal Information"
+            android:layout_marginTop="-13dp"
+            app:layout_constraintTop_toBottomOf="@+id/usernameButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cornerRadius="0dp"/>
+
+        <!-- Security Section -->
+        <TextView
+            android:id="@+id/securityHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security"
+            android:textColor="#1F2731"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/personalInfoButton"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/changePasswordButton"
+            style="@style/OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:gravity="center_vertical|start"
+            android:textAllCaps="false"
+            android:text="Change Password"
+            app:layout_constraintTop_toBottomOf="@+id/securityHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cornerRadius="0dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/biometricsButton"
+            style="@style/OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textAllCaps="false"
+            android:gravity="center_vertical|start"
+            android:layout_marginTop="-13dp"
+            android:text="Biometrics"
+            app:layout_constraintTop_toBottomOf="@+id/changePasswordButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cornerRadius="0dp"/>
+
+
+        <!-- Information Section -->
+        <TextView
+            android:id="@+id/informationHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Information"
+            android:textSize="20sp"
+            android:textColor="#1F2731"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/biometricsButton"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/aboutButton"
+            style="@style/OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textAllCaps="false"
+            android:gravity="center_vertical|start"
+            android:text="About app"
+            app:cornerRadius="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/informationHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/clearCacheButton"
+            style="@style/OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-13dp"
+            android:gravity="center_vertical|start"
+            app:cornerRadius="0dp"
+            android:textAllCaps="false"
+            android:text="Clear data"
+            app:layout_constraintTop_toBottomOf="@+id/aboutButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="56dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/logoutButton"
+            style="@style/OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:gravity="center_vertical|start"
+            app:cornerRadius="0dp"
+            android:textAllCaps="false"
+            android:text="Logout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            android:layout_marginBottom="-55dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

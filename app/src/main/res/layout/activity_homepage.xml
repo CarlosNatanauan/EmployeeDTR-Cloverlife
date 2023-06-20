@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"
+        android:layout_above="@+id/bubbleNavigation"/>
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bubbleNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#cde2fa"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="#f5f9fe"
+            app:bt_colorInactive="#f5f9fe"
+            android:backgroundTint="#0f1418"
+            app:bt_icon="@drawable/ic_homes"
+            app:bt_title="Home"
+            android:layout_weight="1"/>
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="#f5f9fe"
+            app:bt_colorInactive="#f5f9fe"
+            android:backgroundTint="#0f1418"
+            app:bt_icon="@drawable/ic_records"
+            app:bt_title="Records"
+            android:layout_weight="1"/>
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/starred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="#f5f9fe"
+            app:bt_colorInactive="#f5f9fe"
+            android:backgroundTint="#0f1418"
+            app:bt_icon="@drawable/ic_manage"
+            app:bt_title="Manage" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/starredd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="#f5f9fe"
+            app:bt_colorInactive="#f5f9fe"
+            android:backgroundTint="#0f1418"
+            app:bt_icon="@drawable/ic_profile"
+            app:bt_title="Profile" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+
+</RelativeLayout>

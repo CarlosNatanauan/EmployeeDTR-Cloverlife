@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f9fe"
+    tools:context=".Home"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btADD"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:background="@android:color/transparent"
+        android:foreground="?attr/selectableItemBackground"
+        android:src="@drawable/ic_addempfinalnatalaga"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/btVIEW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btVIEW"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:background="@android:color/transparent"
+        android:foreground="?attr/selectableItemBackground"
+        android:src="@drawable/ic_viewempfinalnatalaga"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btADD" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
